@@ -78,10 +78,12 @@ nav {
         margin-left: auto;
 
         li a.nav-link {
+            font-size: 0.813rem;
             color: #fff;
             transition-property: all;
             transition-duration: 0.25s;
             transition-timing-function: ease-in-out;
+            text-transform: uppercase;
 
             &.active {
                 background: -webkit-linear-gradient(#eed786, #95703b);
@@ -200,7 +202,7 @@ nav {
 .carousel .certificates {
     position: absolute;
     text-align: center;
-    bottom: 10px;
+    bottom: 20px;
     left: 0;
     right: 0;
     display: flex;
@@ -304,10 +306,28 @@ nav {
             border: none;
             background-color: transparent;
             text-align: center;
+            .card-title {
+                color: #95703b;
+            }
 
             .card-img-top {
                 width: 48px;
                 margin: 0 auto;
+            }
+        }
+    }
+}
+
+#treatment {
+    .card-wrapper {
+        .card {
+            height: 100%;
+            .card-img-top {
+                height: 180px;
+                object-fit: cover;
+            }
+            .card-text {
+                color: rgba(51,65,85,0.75);
             }
         }
     }
@@ -409,6 +429,27 @@ nav {
 .section-team .single-person:hover .full-name,
 .section-team .single-person:hover .speciality {
     color: #fff;
+}
+
+#dentaltourism {
+    .header-section {
+        margin-bottom: 0px;
+        .small-title {
+            margin-bottom: 15px;
+        }
+    }
+}
+
+.gallery {
+    .row {
+        div[class*="col-"] {
+            padding-left: 5px;
+            padding-right: 5px;
+            img {
+                margin-bottom: 10px !important;
+            }
+        }
+    }
 }
 
 
@@ -513,24 +554,12 @@ nav {
     }
 }
 
-#contact {
-    h4 {}
-}
-
-.cta {
-    padding: 45px 0;
-
-    button {
-        padding: 20px 45px;
-        font-size: 1.5rem;
-    }
-}
-
 .copyright {
-    background: #f2f2f2;
+    background: #353535;
     padding: 10px 0; 
     p {
         margin-bottom: 0;
+        color: #fff;
     }
 }
 
@@ -558,12 +587,39 @@ nav {
     height: 100%;
 }
 
+#contact {
+    .block-wrapper {
+        div[class*="col-"] {
+            padding-block: 15px;
+        }
+        .block {
+            padding: 20px;
+            height: 100%;
+            background-color: #f5f5f5;
+            h5 {
+                font-weight: 800;
+                margin-top: 15px;
+                color: #95703b;
+            }
+            img {
+                width: 32px;
+            }
+        }
+    }
+    
+}
+
 .cta {
+    padding: 0 0 45px;
     .book-btn {
         a {
             color: #fff;
             text-decoration: none;
         }
+    }
+    button {
+        padding: 20px 45px;
+        font-size: 1.5rem;
     }
 }
 
@@ -589,7 +645,7 @@ nav {
     }
 
     .carousel .certificates {
-        width: 100%;
+        width: 90%;
     }
 
     .carousel-control-prev,
@@ -606,7 +662,7 @@ nav {
 
         .navbar-toggler {
             position: absolute;
-            top: 0;
+            top: 8px;
             right: 2px;
             z-index: 1;
         }
